@@ -1,11 +1,9 @@
 
 export default class Validator {
     constructor(){
-
     }
-    validateUsername(name){
-        return /^[A-Z, a-z]/.test(name)&&/[A-Z, a-z]$/.test(name)&&!(/\d{4,}/.test(name))&&!(/[!@#$%^&*()+~, А-Я, а-я]/.test(name))
-        
+    validateUsername(login){
+        return /^[A-Z, a-z]/.test(login)&&/[A-Z, a-z]$/.test(login)&&!(/\d{4,}/.test(login))&&!(/[!@#$%^&*()+~, А-Я, а-я]/.test(login));  
     }
 }
 
